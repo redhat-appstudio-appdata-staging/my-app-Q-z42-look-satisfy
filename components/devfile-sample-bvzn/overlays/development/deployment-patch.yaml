@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bvzn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-bvzn@sha256:80c9ad274f88b50d8f2e0ec6da5bbab7a93da05e54cd665587ae6d502f367a8a
+        name: container-image
+        resources: {}
+status: {}
